@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
+}
+body{
+    background-image: url('g.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 2px;
+    padding: 20px;
+}
+@media screen and (max-width: 900px){
+    body{
+        padding: 10px;
+        margin: 10px;
+    } 
+    .mp{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.mp{
+    padding:1px;
+    display:flex;
+    font:italic bold 40px Arial, sans-serif;
+    justify-content: space-between;
+    color: rgb(245, 240, 240);
+ align-items: center;
+ background-color: rgb(23, 22, 22);
+ border-color: rgb(139, 92, 92);
+ opacity: 0.75;
+    border-width:50px;
+    border-radius: 30px;
+    flex-wrap: wrap;
+}
+
+.p{
+   size: 100px;
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+    border-color: black;
+    padding-right: 10px;
+}
+
+.point{
+    border-color: black;
+    font-size: 35px;
+    gap:10px;
+    padding:5px;
+    border-radius: 50px;
+}
+.point:hover{
+    background-color: rgb(21, 20, 20);
+    color: white;
+    transform: scale(1.1);
+    transition: 0.75s;
+    border-color: aliceblue;
+}
+.about{
+    display:flex;
+    
+ padding:30px;
+    justify-content: space-between;
+    border-width: 5px;
+    padding-bottom: 0%;
+}
+h2{
+    font: italic bold 30px Arial, sans-serif;
+    color: rgb(232, 228, 228);
+align-items: center;}
+.photo{
+    width: 300px;
+    height: 300px;
+    border-radius:80px;
+     border-width:2px;
+    border-color:rgb(212, 208, 208);
+    opacity: 0.6;
+   
+}
+#education{
+    display :flex;
+    
+}html {
+  scroll-behavior: smooth;
+}
+#video{ margin-top: 20px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+ .contact{
+    text-align: center;
+    padding: 0px;
+    
+    display: flex;
+    font: italic bold 30px Arial, sans-serif;
+    justify-content: center;
+    gap:10px
+}
+
+.photor{
+    width: 300px;
+    height: 400px;
+    border-radius:20px;
+     border-width:2px;
+    border-color:rgb(189, 181, 181);
+   
+}
+#contact {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+@media screen and (max-width: 500px) {
+    #contact {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.contact-info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.photo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-color: rgb(189, 176, 176);
+}
+.contact-info:hover{
+  transform: scale(1.5);
+  transition: 0.5s;
+}

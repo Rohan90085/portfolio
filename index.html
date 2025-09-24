@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rohan's Portfolio</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .bg-video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+            object-fit: cover;
+        }
+        #welcome {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            animation: slidein 3s ease;
+        }
+
+        @keyframes slidein {
+            from {
+                opacity: 0;
+                transform: translate(-10%, -10%);
+            }
+            to {
+                opacity: 1;
+                transform: translate(-50%, -50%);
+            }
+        }
+        
+        @keyframes slidein1 {
+            from {
+                opacity: 0;
+                transform: translate(-50%, -100%);
+            }
+            to {
+                opacity: 1;
+                transform: translate(-50%, -50%);
+            }
+        }
+        .explore-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 15px 20px;
+            font-size: 1.5em;
+            background: #a7a4a4;
+            opacity: 0.75;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 1000s;
+        }
+        .explore-btn:hover {
+            background: #ece8e8;
+            transform: scale(1.9);
+            opacity: 0.5;
+            transition: 1s;
+        }
+        
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
+    background: transparent;
+}
+
+video.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    z-index: -1;
+    pointer-events: none;
+}
+.welcome{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+     height: 50vh;
+}
+    </style>
+</head>
+<body>
+    <h2  class="ro" style="animation: slidein1 3s ease; color: #fff; font-size: 2.5em;" >Rohan Kumar P H</h2>
+    <video class="bg-video" autoplay muted loop playsinline>
+        <source src="bv.mp4" type="video/mp4">
+    </video>
+    <div id="welcome">
+        <div class="welcome">
+            <h1 style="font-size: 4em; color: #fff;">Welcome! I'm glad to see you here</h1>
+        </div>
+            <h2 style="font-size: 2em; color: #fff;">Take a look at my portfolio</h2>
+
+        <a href="portfolio.html" class="explore-btn" onclick="greetUser(event)">Explore</a>
+
+    </div>
+    
+</body>
+</html>
