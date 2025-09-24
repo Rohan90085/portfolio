@@ -12,16 +12,7 @@ body{
     margin: 2px;
     padding: 20px;
 }
-@media screen and (max-width: 900px){
-    body{
-        padding: 10px;
-        margin: 10px;
-    } 
-    .mp{
-        flex-direction: column;
-        align-items: flex-start;
-    }
-}
+
 
 .mp{
     padding:1px;
@@ -118,12 +109,7 @@ align-items: center;}
     justify-content: center;
     gap: 20px;
 }
-@media screen and (max-width: 500px) {
-    #contact {
-        flex-direction: column;
-        align-items: center;
-    }
-}
+
 .contact-info{
     display: flex;
     align-items: center;
@@ -138,4 +124,5 @@ align-items: center;}
 .contact-info:hover{
   transform: scale(1.5);
   transition: 0.5s;
+
 }
