@@ -28,6 +28,10 @@ body{
     border-radius: 30px;
     flex-wrap: wrap;
 }
+li{
+   list-style-type:none;
+
+}
 
 .p{
    size: 100px;
@@ -131,4 +135,5 @@ align-items: center;}
   transition: 0.5s;
 
 }
+
 
